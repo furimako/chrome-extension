@@ -1,5 +1,5 @@
 {
-    "name": "chrome-extension-for-furimako",
+    "name": "f-chrome-extension",
     "version": "1.0",
     "description": "Google Chrome Extension for furimako",
     "permissions": ["activeTab", "scripting"],
@@ -12,17 +12,9 @@
     },
     "commands": {
         "open-all-at-once": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+L",
-                "mac": "Command+Shift+L"
-            },
             "description": "open all links at once for Nikkei and Hacker News websites"
         },
         "toggle-pin": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+K",
-                "mac": "Command+Shift+K"
-            },
             "description": "toggle pin setting on the current Chrome tab"
         }
     },

@@ -41,11 +41,8 @@ chrome.commands.onCommand.addListener(async (command) => {
         
     case 'toggle-pin':
         console.log('executing "toggle-pin"')
-        chrome.tabs.get(tabId, async (tab) => {
-            const pinned = !tab.pinned
-            await chrome.tabs.update(tabId, { pinned })
-            console.log(`finished "toggle-pin" (pinned: ${tab.pinned} -> ${pinned})`)
-        })
+        await chrome.tabs.update(tabId, { pinned: !currentTab.pinned })
+        console.log(`finished "toggle-pin" (pinned: ${currentTab.pinned} -> ${!currentTab.pinned})`)
         break
         
     default:
