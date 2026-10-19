@@ -1,5 +1,5 @@
 {
-    "name": "f-chrome-extension",
+    "name": "chrome-extension",
     "version": "1.0",
     "description": "Google Chrome Extension for furimako",
     "permissions": ["activeTab", "scripting"],

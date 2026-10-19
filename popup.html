@@ -1,81 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>f-chrome-extension</title>
-    <style>
-        body {
-            width: 340px;
-            margin: 0;
-            padding: 16px;
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-            font-size: 13px;
-            line-height: 1.6;
-            color: #1f2430;
-        }
-        h1 {
-            margin: 0 0 12px;
-            font-size: 15px;
-        }
-        ul {
-            margin: 0 0 16px;
-            padding: 0;
-            list-style: none;
-        }
-        li {
-            padding: 8px 0;
-            border-top: 1px solid #e6e8ee;
-        }
-        .key {
-            display: inline-block;
-            margin-top: 2px;
-            padding: 1px 6px;
-            border: 1px solid #c8ccd6;
-            border-radius: 4px;
-            background: #f5f6f9;
-            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-            font-size: 12px;
-        }
-        .unset {
-            border-style: dashed;
-            background: #fff6f6;
-            border-color: #e2a0a0;
-            color: #a33;
-        }
-        .recommended {
-            margin-left: 6px;
-            border-style: dashed;
-            background: transparent;
-            color: #6b7280;
-        }
-        button {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #c8ccd6;
-            border-radius: 6px;
-            background: #f5f6f9;
-            font-size: 13px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #eceef4;
-        }
-        .note {
-            margin: 10px 0 0;
-            color: #6b7280;
-            font-size: 12px;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>chrome-extension</title>
+        <style>
+            body {
+                width: 340px;
+                margin: 0;
+                padding: 16px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+                font-size: 13px;
+                line-height: 1.6;
+                color: #1f2430;
+            }
+            h1 {
+                margin: 0 0 12px;
+                font-size: 15px;
+            }
+            ul {
+                margin: 0 0 16px;
+                padding: 0;
+                list-style: none;
+            }
+            li {
+                padding: 8px 0;
+                border-top: 1px solid #e6e8ee;
+            }
+            .key {
+                display: inline-block;
+                margin-top: 2px;
+                padding: 1px 6px;
+                border: 1px solid #c8ccd6;
+                border-radius: 4px;
+                background: #f5f6f9;
+                font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+                font-size: 12px;
+            }
+            .unset {
+                border-style: dashed;
+                background: #fff6f6;
+                border-color: #e2a0a0;
+                color: #a33;
+            }
+            .recommended {
+                margin-left: 6px;
+                border-style: dashed;
+                background: transparent;
+                color: #6b7280;
+            }
+            button {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #c8ccd6;
+                border-radius: 6px;
+                background: #f5f6f9;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            button:hover {
+                background: #eceef4;
+            }
+            .note {
+                margin: 10px 0 0;
+                color: #6b7280;
+                font-size: 12px;
+            }
+        </style>
+    </head>
 
-<body>
-    <h1>f-chrome-extension</h1>
-    <ul id="commands"></ul>
-    <button id="open-shortcuts">ショートカットを設定する</button>
-    <p class="note">
-        キーの割り当ては <code>brave://extensions/shortcuts</code> で管理されています。
-        未割り当てになっていたら上のボタンから開き、推奨キーを入力してください。
-    </p>
-    <script src="popup.js"></script>
-</body>
+    <body>
+        <h1>chrome-extension</h1>
+        <ul id="commands"></ul>
+        <button id="open-shortcuts">ショートカットを設定する</button>
+        <p class="note">
+            キーの割り当ては <code>brave://extensions/shortcuts</code> で管理されています。
+            未割り当てになっていたら上のボタンから開き、推奨キーを入力してください。
+        </p>
+        <script src="popup.js"></script>
+    </body>
 </html>

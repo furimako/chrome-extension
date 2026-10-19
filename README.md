@@ -1,5 +1,5 @@
 
-# f-chrome-extension
+# chrome-extension
 You can
 - open all links at once for [Nikkei](https://www.nikkei.com/) and [Hacker News](https://news.ycombinator.com/) websites
 - toggle pin setting on the current tab
